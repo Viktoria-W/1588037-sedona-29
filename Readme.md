@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория](https://up.htmlacademy.ru/htmlcss/29/user/1588037).
-* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Наставник: [Малик](https://htmlacademy.ru/profile/id17217).
 
 ---
 

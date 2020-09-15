@@ -1,0 +1,207 @@
+/* Variables */
+:root {
+    --basic-white: #FFFFFF;
+    --basic-white-footer: rgba(255, 255, 255, 0.9);
+    --basic-blue: #81B3D2;
+    --basic-black: #000000;
+    --basic-black-logo: #231F20;
+    --basic-gray-background: #EEEEEE;
+    --basic-gray-page: #888888;
+    --basic-gray-text: #333333;
+    --basic-gray-form: #F2F2F2;
+    --basic-gray-icon: #A9A9A9;
+    --basic-brown: #766357;
+
+    
+    --special-gray-locked: #6A6A6A;
+    --special-gray-pointer: #ABABAB;
+    --special-gray-arrow: #CACACA;
+    --special-blue-guidance: #669EC0;
+    --special-blue-push: #5496BD;
+    --special-brown-guidance: #604E43;
+    --special-brown-push: #503E33;
+    --special-gray-form-guidance: #EBEBEB;
+    --special-gray-logo-push: #BDBBBC; 
+
+}
+
+/* Global */
+
+.page { 
+    margin: 0; 
+    padding: 0;
+    min-width: 1200px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-gray-background);
+
+}
+img { 
+    max-width: 100%;
+    height: auto;
+}
+a { 
+    text-decoration: none;
+}
+
+/* Main-navigation */
+
+.main-navigation {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    text-align: center;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a {
+    color: var(--basic-black);
+}
+.site-navigation a:hover {
+    color: var(--basic-blue);
+}
+
+/* Welcome */
+
+.welcome-img {
+    text-align: center;
+}
+
+/* Container-feature */
+
+.container-feature {
+    background-color: var(--basic-white);
+}
+.slogan {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+.reasons {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--basic-gray-text);
+}
+.reasons-list {
+    list-style: none;
+}
+.container-first {
+    text-align: left;
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+.feature-list {
+    text-align: center;
+}
+.feature-item h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--basic-black);
+    list-style: none;
+    text-align: center;
+}
+.feature-item p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--basic-gray-text);
+    text-align: center;
+}
+
+.container-second {
+    text-align: right;
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+.reasons-third,
+.reasons-fourth,
+.reasons-fifth {
+    background-color: var(--basic-gray-background);
+}
+.reasons-third,
+.reasons-fourth,
+.reasons-fifth h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+.reasons-third,
+.reasons-fourth,
+.reasons-fifth p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* Reservation*/
+
+.container-reservation {
+    /* зачения были взяты из Figma 
+    я несовсем понимаю почему 
+    такие огромные буквы у меня,
+    и как это исправить */
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--basic-white);
+}
+
+/* Map */
+
+.container-map {
+    text-align: center;
+}
+
+/* Footer*/
+
+.main-footer {
+    background-color: var(--basic-white-footer);
+}
+.contacts {
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.contacts a {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+.socials {
+    text-align: center;
+}
+.socials-list {
+    list-style: none;
+    background-color: var(--basic-blue);
+}
+.socials-list a:hover {
+    background-color: var(--special-blue-guidance);
+}
+.socials-list a:active {
+    background-color: var(--special-blue-push);
+}
+.copyright {
+    text-align: right;
+}
+.copyright p {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.copyright a:hover {
+    color: var(--basic-blue);
+}
+.copyright a:active {
+    color: var(--special-gray-logo-push);
+}

@@ -60,6 +60,8 @@ a {
 
 .site-navigation {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* User navigation */
@@ -95,6 +97,8 @@ a {
     color: var(--basic-gray-text);
 }
 .reasons-list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .container-first {
@@ -102,30 +106,45 @@ a {
     background-color: var(--basic-blue);
     color: var(--basic-white);
 }
+.container-first h3{
+    font-size: 21px;
+    line-height: 21px;
+}
+.container-first p{
+    font-size: 14px;
+    line-height: 21px;
+}
 .feature-list {
+    background-color: var(--basic-white);
+}
+.feature-item {
     text-align: center;
 }
 .feature-item h4 {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
-    text-align: center;
     color: var(--basic-black);
     list-style: none;
-    text-align: center;
 }
 .feature-item p {
     font-size: 14px;
     line-height: 21px;
-    text-align: center;
     color: var(--basic-gray-text);
-    text-align: center;
 }
 
 .container-second {
     text-align: right;
     background-color: var(--basic-blue);
     color: var(--basic-white);
+}
+.container-second h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+.container-second p {
+    font-size: 14px;
+    line-height: 21px;
 }
 .reasons-third,
 .reasons-fourth,
@@ -148,14 +167,20 @@ a {
 /* Reservation*/
 
 .container-reservation {
-    /* зачения были взяты из Figma 
-    я несовсем понимаю почему 
-    такие огромные буквы у меня,
-    и как это исправить */
+    text-align: center;
+    background-color: var(--basic-white);
+}
+.container-reservation h2 {
     font-size: 30px;
     line-height: 24px;
     text-align: center;
-    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+.container-reservation p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--basic-black);
 }
 
 /* Map */
@@ -170,19 +195,26 @@ a {
     background-color: var(--basic-white-footer);
 }
 .contacts {
-    font-size: 21px;
-    line-height: 26px;
     color: var(--basic-black);
 }
 .contacts a {
+    font-size: 21px;
+    line-height: 26px;
     color: var(--basic-black);
     text-decoration: none;
+}
+.contacts h2 {
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
 }
 .socials {
     text-align: center;
 }
 .socials-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
     background-color: var(--basic-blue);
 }
 .socials-list a:hover {

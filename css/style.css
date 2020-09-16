@@ -22,6 +22,8 @@
     --special-brown-push: #503E33;
     --special-gray-form-guidance: #EBEBEB;
     --special-gray-logo-push: #BDBBBC; 
+    --special-gray-line: #E5E5E5;
+    --special-gray-button: #666666;
 
 }
 
@@ -182,6 +184,140 @@ a {
     text-align: center;
     color: var(--basic-black);
 }
+
+/* Filter */
+
+/*
+.filter {
+
+}
+*/
+
+/* Search-result */
+
+.search-result {
+    background-color: var(--basic-white);
+}
+.search-result p {
+    text-align: left;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+.search-result ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.search-result-category a {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dashed var(--basic-blue);
+}
+.search-result-category a:hover {
+    color: var(--basic-blue);
+}
+.search-result-category a:active {
+    color: var(--basic-black);
+    opacity: 1;
+    border-bottom: none;
+}
+.arrow {
+    text-align: right;
+}
+.arrow a {
+    color: var(--special-gray-arrow);
+}
+.arrow a:hover {
+    color: var(--basic-black);
+}
+.arrow a:active {
+    color: var(--basic-blue);
+}
+
+/* Hotels */
+
+.hotels {
+    background-color: var(--basic-white);
+}
+.hotels ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hotels h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.hotels h3:hover {
+    color: var(--basic-blue);
+}
+.hotels h3:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+.hotels p {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-gray-text);
+}
+.hotels-list {
+    text-align: left;
+    border-bottom: 1px solid var(--special-gray-line);
+}
+
+/* Button*/
+
+.more {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+.more:hover {
+    background-color: var(--special-blue-guidance);
+}
+.more:active {
+    color: var(--basic-white);
+    opacity: 0.3;
+    background-color: var(--special-blue-push);
+}
+.reserve {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+}
+.reserve:hover {
+    background-color: var(--special-brown-guidance);
+}
+.reserve:active {
+    color: var(--basic-white);
+    opacity: 0.3;
+    background-color: var(--special-brown-push);
+
+}
+.rating {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: var(--special-gray-button);
+    background-color: var(--basic-gray-form);
+}
+
+.stars {
+    text-align: right;
+}
+
+
 
 /* Map */
 

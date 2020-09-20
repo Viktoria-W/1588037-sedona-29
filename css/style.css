@@ -234,15 +234,6 @@ a {
 .arrow {
     text-align: right;
 }
-.arrow a {
-    color: var(--special-gray-arrow);
-}
-.arrow a:hover {
-    color: var(--basic-black);
-}
-.arrow a:active {
-    color: var(--basic-blue);
-}
 
 /* Hotels */
 
@@ -254,16 +245,16 @@ a {
     padding: 0;
     margin: 0;
 }
-.hotels a {
+.hotels-name {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.hotels a:hover {
+.hotels-name:hover {
     color: var(--basic-blue);
 }
-.hotels a:active {
+.hotels-name:active {
     color: var(--basic-black);
     opacity: 0.3;
 }
@@ -316,6 +307,7 @@ a {
     text-align: right;
     color: var(--special-gray-button);
     background-color: var(--basic-gray-form);
+    
 }
 
 .stars {
@@ -356,14 +348,12 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
+    
+}
+.socials-list a{
     background-color: var(--basic-blue);
 }
-.socials-list a:hover {
-    background-color: var(--special-blue-guidance);
-}
-.socials-list a:active {
-    background-color: var(--special-blue-push);
-}
+
 .copyright {
     text-align: right;
 }
@@ -372,9 +362,4 @@ a {
     line-height: 26px;
     color: var(--basic-black);
 }
-.copyright a:hover {
-    color: var(--basic-blue);
-}
-.copyright a:active {
-    color: var(--special-gray-logo-push);
-}
+

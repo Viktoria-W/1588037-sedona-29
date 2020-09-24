@@ -62,6 +62,7 @@ a {
     width: 1200px;
     margin: 0 auto;
     padding: 0 40px; 
+    
 }
 
 /* Main-navigation */
@@ -71,17 +72,20 @@ a {
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    text-align: center;
 }
 .site-navigation {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-around;
 }
-
+.main-logo {
+    display: block;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
 
 /* User navigation */
 
@@ -110,6 +114,8 @@ a {
 
 .container-feature {
     background-color: var(--basic-white);
+    display: flex;
+    flex-direction: column;
 }
 .slogan {
     font-weight: bold;
@@ -122,13 +128,11 @@ a {
     line-height: 26px;
     text-align: center;
     color: var(--basic-gray-text);
-    
-    
 }
 .reasons-list {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none;;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 256px 256px 256px 256px; 
@@ -141,7 +145,6 @@ a {
     grid-column-end: 4; 
     
 }
-
 .sity-foto-2 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -154,6 +157,10 @@ a {
     color: var(--basic-white);
     height: 256px;
 }
+
+.reason-first {
+    display: block;
+}
 .container-first h3{
     font-size: 21px;
     line-height: 21px;
@@ -163,37 +170,34 @@ a {
     line-height: 21px;
 }
     
-.feature-item-1{
+.feature-item-1,
+.feature-item-2,
+.feature-item-3 {
+    text-align: center;
+    padding: 10px;
+    height: 256px;
+    background-color: var(--basic-white); 
+
+}
+.feature-item-1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    text-align: center;
-    padding: 10px;
-    height: 256px;
-    background-color: var(--basic-white); 
 }
-    
-.feature-item-2{
+.feature-item-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    text-align: center;
-    padding: 10px;
-    height: 256px;
-    background-color: var(--basic-white); 
 }
-.feature-item-3{
+.feature-item-3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    text-align: center;
-    padding: 10px;
-    height: 256px;
-    background-color: var(--basic-white); 
 }
+
 .feature-item h4 {
     font-weight: bold;
     font-size: 21px;
@@ -216,7 +220,6 @@ a {
     grid-column-end: -2;
     grid-row-start: 3;;
     grid-row-end: 3;
-
 }
 .container-second h3 {
     font-size: 21px;
@@ -226,21 +229,11 @@ a {
     font-size: 14px;
     line-height: 21px;
 }
-.sity-foto-2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    align-items: stretch;
-
-}
 .reasons-third,
 .reasons-fourth,
 .reasons-fifth {
     background-color: var(--basic-gray-background);
-    height: 256px;
-    
-    
+    height: 256px; 
 }
 .reasons-third,
 .reasons-fourth,
@@ -276,6 +269,7 @@ a {
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
 
 /* Reservation*/
 
@@ -504,16 +498,18 @@ a {
 /* Footer*/
 
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     background-color: var(--basic-white-footer);
     width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+    
 }
 .contacts {
     color: var(--basic-black);
+    flex-basis: 400px;
     
 }
 .contacts a {
@@ -530,32 +526,37 @@ a {
 .socials {
     width: 200px;
     margin: 0 40px;
+    flex-basis: 400px;
 }
 .socials-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
     
 }
 .socials-list a{
     background-color: var(--basic-blue);
-    margin-left: 10px;
-    padding: 10px;
-    column-gap: 6px;
+    box-sizing: border-box;
     text-align: center;
 }
 
 .copyright {
     text-align: center;
     margin: 0 40px;
+    flex-basis: 400px;
 }
 .copyright p {
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
+    vertical-align: middle;
+}
+.copyright-link{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
    

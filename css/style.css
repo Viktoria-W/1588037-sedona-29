@@ -137,7 +137,7 @@ a {
     box-sizing: border-box;
 }
 .sity-foto-1 {
-     grid-column-start: 2;
+    grid-column-start: 2;
     grid-column-end: 4; 
     
 }
@@ -309,6 +309,9 @@ a {
 
 .search-result {
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: 1fr;
 }
 .search-result h3 {
     text-align: left;
@@ -316,17 +319,33 @@ a {
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .search-result p {
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .search-result ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 200px  200px  200px ;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    align-content: center;
+
 }
 .search-result-category a {
     font-size: 12px;
@@ -334,6 +353,11 @@ a {
     color: var(--basic-black);
     opacity: 0.3;
     border-bottom: 1px dashed var(--basic-blue);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
 }
 .search-result-category a:hover {
     color: var(--basic-blue);
@@ -345,6 +369,10 @@ a {
 }
 .arrow {
     text-align: right;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 /* Hotels */
@@ -379,6 +407,45 @@ a {
     text-align: left;
     border-bottom: 1px solid var(--special-gray-line);
 }
+.hotel-list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    grid-auto-flow: dense;
+    min-height: 540px;
+    grid-template-areas: 
+    "hotels-list-1 hotels-list-1 hotels-list-1"
+    "hotels-list-2 hotels-list-2 hotels-list-2"
+    "hotels-list-3 hotels-list-3 hotels-list-3";
+}
+.hotels-list-1{
+    grid-area: hotels-list-1;
+    align-self: start;
+}
+.hotels-list-2{
+    grid-area: hotels-list-2;
+}
+.hotels-list-3{
+    grid-area: hotels-list-3;
+}
+.hotel-img-1,
+.hotel-img-2,
+.hotel-img-3 {
+    padding-top: 40px;
+    margin-left: 40px;
+}
+.hotels-description-1 {
+    text-align: center;
+}
+.hotels-description-2 {
+    text-align: center;
+}
+.hotels-description-3 {
+    text-align: center;
+}
+
+
 
 /* Button*/
 

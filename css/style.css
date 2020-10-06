@@ -55,12 +55,12 @@ a {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    
 }
 .shadow {
     position: relative;
-    min-width: 1200px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 0px 15px 5px var(--basic-black-opasity);
 }
 .visually-hidden {
@@ -156,7 +156,7 @@ a {
 .main-container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    
 }
 
 /* Container-feature */
@@ -415,11 +415,11 @@ a {
     padding-top: 4px;
 }
 .check-date-1 {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 .check-date-1 label,
 .check-date-2 label {
-    padding-top: 9px;
+    padding-top: 8px;
 }
 .calendar{
     position: absolute;
@@ -427,14 +427,23 @@ a {
     top: 13px;
     border: none;
     outline: none;
-    background-color: var(--basic-gray-form);
+    background: transparent;
 }
 .check-in-date,
 .check-out-date {
     width: 346px;
     height: 38px;
     margin-left: 20px;
-    padding-left: 10px;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.check-in-date {
+    padding-left: 15px;
+}
+.check-date-2 input {
+    padding-top: 3px;
 }
 .minus-button,
 .plus-button {
@@ -457,11 +466,8 @@ a {
     margin-top: 30px;
 }
 .adults-children label {
-    padding-top: 9px;
-    margin-left: 25px;
-}
-.adults-children label:first-child {
-    margin-left: 5px;
+    padding-top: 6px;
+    padding-left: 5px;
 }
 .minus-plus {
     display: flex;
@@ -479,10 +485,13 @@ a {
 .plus-button:active path{
     fill: var(--basic-blue);
 }
-.adults-children input{
+.adults-children input {
     width: 38px;
-    height: 36px;
+    height: 38px;
     text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
 }
 .minus-plus:last-child {
     margin-right: 20px;
@@ -928,6 +937,7 @@ a {
 .container-map {
     text-align: center;
     position: relative;
+    z-index: -1;
 }
 
 /* Footer*/
@@ -941,10 +951,11 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    position: absolute;
+    margin-top: -130px;
     bottom: 0;
     left: 40px;
     padding: 3px;
+    z-index: auto;
 }
 .contacts {
     font-size: 21px;
@@ -952,7 +963,7 @@ a {
     color: var(--basic-black);
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 20px;
+    padding: 19px 73px;
 }
 .contacts a {
     font-size: 21px;
@@ -970,7 +981,7 @@ a {
 }
 .socials {
     width: 150px;
-    padding: 35px 10px 10px 0;
+    padding: 37px 80px 0 0;
 }
 .socials-list {
     list-style: none;
@@ -991,15 +1002,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 43px;
-    height: 43px;
+    width: 46px;
+    height: 48px;
     background-color: var(--basic-blue);
     color: inherit;
 }
-
+.social-button path {
+    margin-top: 20px;
+}
 .copyright {
     text-align: center;
-    padding: 40px 60px 10px 0;
+    padding: 40px 80px 0 0;
 }
 .copyright p {
     font-size: 14px;
@@ -1007,6 +1020,7 @@ a {
     color: var(--basic-black);
     vertical-align: middle;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .academy-link:hover path {
    fill: var(--basic-blue);

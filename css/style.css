@@ -398,7 +398,7 @@ a {
     line-height: 26px;
     font-weight: bold;
     background-color: var(--basic-gray-form);
-    border: none;
+    border: 2px solid var(--basic-white);
 }
 .search-form input:hover {
     background-color: var(--special-gray-form-guidance);
@@ -583,7 +583,7 @@ a {
     margin: 0;
     padding: 0;
     padding-left: 43px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 .infrastructure li,
 .hotel-type li {
@@ -602,21 +602,18 @@ a {
     position: absolute;
     left: -42px;
     top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--basic-white);
-    border-radius: 3px;
-}
-.filter-input-checkbox:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: -38px;
     width: 23px;
     height: 23px;
-    background-image: url("../img/tick.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url("../img/checkbox-off.svg");
+}
+.filter-input-checkbox:checked + label::before{
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
 }
 .hotel-type{
     padding-top: 11px;
@@ -681,11 +678,12 @@ a {
 }
 .filter-item input{
     border: none;
+    outline: none;
     background: none;
     display: inline-block;
     width: 50px;
     height: 30px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
@@ -696,15 +694,18 @@ a {
     height: 33px;
     border: 2px solid var(--basic-white);
     border-radius: 2px;
-    padding-left: 60px;
+    padding: 0 31px ;
 }
 .price label {
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
+}
+.min-price {
+    padding-left: 32px;
 }
 .max-price {
     padding-left: 70px;
@@ -714,7 +715,7 @@ a {
     content: "";
     position: absolute;
     top: -2px;
-    left: 24px;
+    left: 20px;
     width: 2px;
     height: 22px;
     background: var(--basic-white);
@@ -731,7 +732,7 @@ a {
     text-transform: uppercase;
     color: var(--basic-white);
     position: absolute;
-    left: 87px;
+    left: 84px;
     top: 55px;
 }
 .show:hover {
@@ -868,9 +869,19 @@ a {
 .hotels-description-3 {
     flex-grow: 1;
     align-items: center;
-    padding-top: 21px;
+    padding-top: 24px;
     padding-left: 29px;
 }
+.description-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.description-button-1 p,
+.description-button-2 p {
+    margin: 7px 0 15px 0;
+}
+
 
 /* Button*/
 
@@ -880,10 +891,10 @@ a {
     font-weight: bold;
     color: var(--basic-white);
     background-color: var(--basic-blue);
-    display: inline-block;
-    width: 110px;
-    height: 27px;
+    padding: 3px 16px;
+    display: block;
     text-align: center; 
+    margin: 0 7px 0 0;
 }
 .more:hover {
     background-color: var(--special-blue-guidance);
@@ -898,10 +909,10 @@ a {
     font-weight: bold;
     color: var(--basic-white);
     background-color: var(--basic-brown);
-    display: inline-block;
-    width: 142px;
-    height: 27px;
+    display: block;
+    padding: 3px 17px;
     text-align: center;
+    margin: 8px 0 0 0;
 }
 .reserve:hover {
     background-color: var(--special-brown-guidance);
@@ -911,26 +922,39 @@ a {
     background-color: var(--special-brown-push);
 
 }
-.rating {
+.stars-rating-1,
+.stars-rating-2,
+.stars-rating-3 {
+    background-image: url("../img/star.svg");
+    background-repeat: repeat-x;
+    width: 38px;
+    height: 70px;
+}
+.stars-rating-1 {
+    width: 75px;
+    margin-left: 25px;
+}
+.stars-rating-2 {
+    width: 58px;
+    margin-left: 45px;
+}
+.stars-rating-3 {
+    margin-left: 70px;
+}
+.rating-1,
+.rating-2,
+.rating-3 {
     font-size: 14px;
     line-height: 21px;
-    color: var(--special-gray-button);
-    background-color: var(--basic-gray-form);
-    display: block;
     width: 110px;
     height: 27px;
-    margin-top: 43px;
     text-align: center;
+    margin-right: 40px ;
+    background-color: var(--basic-gray-form);
 }
-.stars {
-    text-align: right;
-    padding-left: 3px;
+.rating-hotels {
+    margin: 25px 30px 20px 5px;
 }
-.stars-rating {
-    padding-top: 15px;
-    padding-right: 74px;
-}
-
 
 /* Map */
 
@@ -956,6 +980,9 @@ a {
     left: 40px;
     padding: 3px;
     z-index: auto;
+}
+.hotel-footer {
+    margin: 0;
 }
 .contacts {
     font-size: 21px;

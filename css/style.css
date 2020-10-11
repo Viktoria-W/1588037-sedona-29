@@ -450,14 +450,23 @@ a {
     border: none;
     outline: none;
 }
+.plus-button:focus {
+    outline: 1px solid var(--basic-black);
+}
 .minus-button {
     padding-bottom: 5px;
+}
+.minus-button:focus {
+    outline: 1px solid var(--basic-black);
 }
 .calendar:hover path{
     fill: var(--basic-black);
 }
 .calendar:active path{
     fill: var(--basic-blue);
+}
+.calendar:focus {
+    outline: 1px solid var(--basic-black);
 }
 .adults-children {
     display: inline-flex;
@@ -506,7 +515,7 @@ a {
     height: 38px;
     background-color: var(--basic-gray-form);
 }
-.search-button{
+.search-button {
     border: none;
     outline: none;
     width: 568px;
@@ -526,7 +535,10 @@ a {
     background-color: var(--special-brown-push);
     color:rgb(225, 225, 225, 0,3);
 }
-.find{
+.search-button:focus {
+    outline: 2px solid var(--basic-blue);
+}
+.find {
     border: none;
     outline: none;
     font-weight: bold;
@@ -551,6 +563,9 @@ a {
 .find:active {
     background-color: var(--special-blue-push);
     color:rgb(225, 225, 225, 0,3);
+}
+.find:focus {
+    outline: 1px solid var(--basic-black);
 }
 
 /* Filter */
@@ -596,6 +611,11 @@ a {
 .filter-option label {
     position: relative;
     display: block;
+}
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {    
+    outline: 1px solid var(--basic-white);
+
 }
 .filter-input-checkbox + label::before {
     content: "";
@@ -708,7 +728,7 @@ a {
     padding-left: 32px;
 }
 .max-price {
-    padding-left: 70px;
+    padding-left: 71px;
     position: relative;
 }
 .max-price::after {
@@ -922,24 +942,19 @@ a {
     background-color: var(--special-brown-push);
 
 }
-.stars-rating-1,
-.stars-rating-2,
-.stars-rating-3 {
-    background-image: url("../img/star.svg");
-    background-repeat: repeat-x;
-    width: 38px;
-    height: 70px;
-}
 .stars-rating-1 {
-    width: 75px;
-    margin-left: 25px;
+    width: 100px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 .stars-rating-2 {
-    width: 58px;
     margin-left: 45px;
+    margin-top: 5px;
 }
 .stars-rating-3 {
-    margin-left: 70px;
+    margin-left: 68px;
+    margin-top: 5px;
 }
 .rating-1,
 .rating-2,
@@ -951,6 +966,13 @@ a {
     text-align: center;
     margin-right: 40px ;
     background-color: var(--basic-gray-form);
+}
+
+.rating-2 {
+    margin-top: 42px;
+}
+.rating-3 {
+    margin-top: 42px;
 }
 .rating-hotels {
     margin: 25px 30px 20px 5px;

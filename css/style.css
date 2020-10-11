@@ -114,6 +114,9 @@ a {
     margin-left: 255px;
     padding-left: 10px;
 }
+.site-navigation .activ {
+    color: var(--basic-brown);
+}
 .main-logo {
     display: block;
     top: 0;
@@ -802,6 +805,9 @@ a {
 }
 .search-result-category {
     flex-grow: 1;
+}
+.search-result-category .activ-category {
+    color: var(--basic-blue);
 }
 .search-result-category a {
     font-size: 12px;

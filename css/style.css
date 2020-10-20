@@ -50,11 +50,11 @@ img {
 a { 
     text-decoration: none;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.reset-arrows::-webkit-outer-spin-button,
+.reset-arrows::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-input[type='number'] {
+.reset-arrows[type='number'] {
     -moz-appearance: textfield;
 }
 .page-body {
@@ -189,7 +189,7 @@ input[type='number'] {
     line-height: 26px;
     text-align: center;
     margin-top: 43px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
 }
 .reasons {
     font-size: 14px;
@@ -237,14 +237,14 @@ input[type='number'] {
     display: block;
     font-size: 14px;
     line-height: 21px;
-    margin-top: 27px;
+    margin-top: 25px;
 }
     
 .feature-item-1,
 .feature-item-2,
 .feature-item-3 {
     text-align: center;
-    padding: 60px 50px 68px 50px;
+    padding: 60px 50px 66px 50px;
     background-color: var(--basic-white); 
 }
 .feature-item-1 {
@@ -272,7 +272,7 @@ input[type='number'] {
     line-height: 21px;
     color: var(--basic-black);
     list-style: none;
-    margin-top: 23px;
+    margin-top: 21px;
     margin-bottom: 28px;
 }
 .feature-item p {
@@ -315,8 +315,8 @@ input[type='number'] {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 7px;
+    margin-bottom: 27px;
 }
 .reasons-third p:last-child,
 .reasons-fourth p:last-child,
@@ -394,11 +394,14 @@ input[type='number'] {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    visibility: hidden;
+    
 }
 .modal-show {
-    visibility: visible;
-    animation: bounce 0.5s;
+    visibility: hidden; 
+    
+}
+.modal-animation {
+    animation: bounce 0.2s; 
 }
 .search-form {
     display: flex;
@@ -441,7 +444,7 @@ input[type='number'] {
 .calendar{
     position: absolute;
     right: 3px;
-    top: 12px;
+    top: 10px;
     border: none;
     outline: none;
     background: transparent;
@@ -572,7 +575,7 @@ input[type='number'] {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 57px;
+    margin-top: 54px;
 }
 .find:hover {
     background-color: var(--special-blue-guidance);
@@ -628,11 +631,6 @@ input[type='number'] {
 .filter-option label {
     position: relative;
     display: block;
-}
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {    
-    outline: 1px solid var(--basic-white);
-
 }
 .filter-input-checkbox + label::before {
     content: "";
@@ -727,14 +725,15 @@ input[type='number'] {
     color: var(--basic-white);
 }
 .price {
-    width: 250px;
     height: 33px;
     border: 2px solid var(--basic-white);
     border-radius: 2px;
     padding: 0 31px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .price label {
-    margin-top: 40px;
     text-align: left;
     text-transform: uppercase;
     font-size: 14px;
@@ -742,16 +741,16 @@ input[type='number'] {
     color: var(--basic-white);
 }
 .min-price {
-    padding-left: 32px;
+    padding-left: 35px;
 }
 .max-price {
-    padding-left: 67px;
     position: relative;
+    padding-left: 72px;
 }
-.max-price::after {
+.max-price::after{
     content: "";
     position: absolute;
-    top: -2px;
+    top: 6px;
     left: 20px;
     width: 2px;
     height: 22px;
@@ -996,7 +995,7 @@ input[type='number'] {
 }
 
 .rating-hotels {
-    margin-right: 75px;
+    margin-right: 70px;
 }
 
 /* Map */
@@ -1009,6 +1008,8 @@ input[type='number'] {
 }
 .container-map iframe {
     position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* Footer*/
@@ -1108,9 +1109,18 @@ input[type='number'] {
 
 @keyframes bounce {
     0% {
-    top: 2100px;
+    top: 2090px;
+    }
+    25%{
+    top:2110px;
+    }
+    50%{
+    top:2130px;
+    }
+    75%{
+    top:2150px;
     }
     100% {
-    top: 2150px;
+    top:2170px;
     }
   }

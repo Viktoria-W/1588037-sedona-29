@@ -102,15 +102,15 @@
                 <a href="search.html" id="search" class="search-button">Поиск гостиницы в седоне</a>
               </div>
               <div class="booking-window search-form">
-                <form action="#" class="form-window">
+                <form action="#" class="form-window" method="POST">
                   <div class="check-date-1">
                     <label for="check-in-date">Дата заезда:</label>
-                      <input type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017" class="check-in-date">
+                      <input type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017" class="check-in-date" required>
                       <button type="button" class="calendar" aria-label="Открыть каленадарь"><svg width="21" height="23" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg></button>
                     </div>
                     <div class="check-date-2">
                       <label for="check-out-date">Дата выезда:</label>
-                      <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017" class="check-out-date">
+                      <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017" class="check-out-date" required>
                       <button type="button" class="calendar" aria-label="Открыть каленадарь"><svg width="21" height="23" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg></button>
                     </div>
                     <div class="adults-children">
@@ -118,7 +118,7 @@
                       <label for="number-adults">Взрослые:</label>
                       <div class="minus-plus">
                         <button type="button" class="minus-button" aria-label="Уменьшить колличество взрлослых"><svg width="12" height="3" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button>
-                        <input type="number" name="number-adults" id="number-adults" value="2" class="number-adults">
+                        <input type="number" name="number-adults" id="number-adults" value="2" class="number-adults reset-arrows" required>
                         <button type="button" class="plus-button" aria-label="Увеличить колличество взрлослых"><svg width="11" height="11" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/></svg></button>
                       
                     </div>
@@ -126,7 +126,7 @@
                       <label for="number-children">Дети:</label>
                       <div class="minus-plus">
                         <button type="button" class="minus-button" aria-label="Уменьшить колличество детей"><svg width="12" height="3" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill="#A9A9A9" d="M0 0h12v3H0z"/></svg></button>
-                        <input type="number" name="number-children" id="number-children" value="0" class="number-children">
+                        <input type="number" name="number-children" id="number-children" value="0" class="number-children reset-arrows">
                         <button type="button" class="plus-button" aria-label="Увеличить колличество взрлослых"><svg width="11" height="11" fill="A9A9A9" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/></svg></button>
                       </div>
                     
@@ -141,7 +141,7 @@
         <section class="container-map">
           <h2 class="visually-hidden">Карта</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d704470.6344280796!2d-112.04782106985809!3d34.893753697855324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602010228341!5m2!1sru!2sru" width="1199" height="594"  style="border:0;" allowfullscreen=""></iframe>
-          <img src="../1588037-sedona-29/img/map.png" width="1199" height="594" alt="Карта города Седона">
+          <img src="img/map.png" width="1199" height="594" alt="Карта города Седона">
         </section>
       </div>
       </main>

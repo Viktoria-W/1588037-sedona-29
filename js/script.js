@@ -18,32 +18,32 @@ try {
 }
  
 
- 
+
  
 searchButton.addEventListener("click", function (evt) {
+    
      if (modalWindow.classList.contains("modal-show")) {
         evt.preventDefault();
         modalWindow.classList.remove("modal-show");
-     } else {
+        modalWindow.classList.add("modal-animation");
+    } else {
         evt.preventDefault();
         modalWindow.classList.add("modal-show"); 
-        checkInDate.focus();
-        }
-    
+        modalWindow.classList.remove("modal-animation");
+    }
        if (storage) {
         adults.value = storage;
         children.value = storage;
       }
 });
-    
-   
 
 
 searchForm.addEventListener("submit", function (evt) {
-    if (!checkInDate.value || !checkOutDate.value || !adults.value || !children.value){
+    if (!checkInDate.value || !checkOutDate.value || !adults.value){
         evt.preventDefault();
     } else {
         if (isStorageSupport) {
+            evt.preventDefault();
             localStorage.setItem("adults", adults.value, "children", children.value );
         }
         
@@ -58,8 +58,3 @@ window.addEventListener("keydown", function (evt){
         }
     }
 });
-
-searchForm.addEventListener("click", function(evt) {
-    evt.preventDefault();
-}
-);

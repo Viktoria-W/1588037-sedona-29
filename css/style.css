@@ -148,6 +148,7 @@ a {
     background-image: url("../img/background-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--basic-gray-page);
     width: 1200px;
     height: 509px;
     text-align: center;
@@ -330,14 +331,12 @@ a {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-
 }
 .reasons-fourth {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-
 }
 .reasons-fifth {
     grid-column-start: 3;
@@ -520,7 +519,7 @@ a {
     outline: none;
     border: none;
 }
-.minus-button{
+.minus-button {
    width: 38px;
    height: 38px;
    background-color: var(--basic-gray-form);
@@ -589,6 +588,7 @@ a {
     background-image: url("../img/background.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--basic-gray-page);
     min-height: 217px;
     display: flex;
     flex-wrap: wrap;
@@ -1108,18 +1108,18 @@ a {
 
 @keyframes bounce {
     0% {
-    top: 2090px;
+        top: 2090px;
     }
     25%{
-    top:2110px;
+        top:2110px;
     }
     50%{
-    top:2130px;
+        top:2130px;
     }
     75%{
-    top:2150px;
+        top:2150px;
     }
     100% {
-    top:2170px;
+        top:2170px;
     }
   }

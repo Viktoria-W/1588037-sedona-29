@@ -400,6 +400,9 @@ a {
     visibility: visible;
     animation: bounce 0.2s; 
 }   
+.modal-error {
+    animation: shake 0.6s;
+}
 .search-form {
     display: flex;
     flex-wrap: wrap;
@@ -1143,5 +1146,25 @@ a {
     }
     100% {
         top:2170px;
+    }
+  }
+  @keyframes shake {
+    0%,
+    100% {
+        transform: translateX(-50%);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
     }
   }

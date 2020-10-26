@@ -21,11 +21,9 @@ searchButton.addEventListener("click", function (evt) {
 	if (modalWindow.classList.contains("modal-show")) {
 		evt.preventDefault();
 		modalWindow.classList.remove("modal-show");
-		modalWindow.classList.add("modal-animation");
 	} else {
 		evt.preventDefault();
 		modalWindow.classList.add("modal-show");
-		modalWindow.classList.remove("modal-animation");
 	}
 	if (storage) {
 		adults.value = storage;

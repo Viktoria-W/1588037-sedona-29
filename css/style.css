@@ -65,6 +65,7 @@ a {
     align-content: start;
 }
 .shadow {
+    min-height: 100%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -95,7 +96,7 @@ a {
 .main-navigation {
     background-color: var(--basic-white);
     position: relative;
-    height: 56px;
+    min-height: 56px;
 }
 .site-navigation {
     list-style: none;
@@ -111,7 +112,6 @@ a {
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
-    width: 100px;
     text-align: center;
     align-items: center;
 }
@@ -190,7 +190,7 @@ a {
     line-height: 26px;
     text-align: center;
     margin-top: 43px;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
 }
 .reasons {
     font-size: 14px;
@@ -238,7 +238,7 @@ a {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
 }
 .feature-item-3 p:first-of-type {
     margin-bottom: 25px;
@@ -262,7 +262,7 @@ a {
 }
 .feature-item-1,
 .feature-item-2 {
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .container-second{
     display: grid;
@@ -840,21 +840,28 @@ a {
     padding-top: 30px;
     padding-left: 40px;
 }
+.search-result li {
+    font-size: 12px;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    color: var(--basic-black-opasity);
+}
 .search-result li:not(:first-child) { 
-    padding-left: 35px;
+    padding-left: 33px;
 }
 .search-result-category {
     flex-grow: 1;
 }
 .search-result-category .activ-category {
     color: var(--basic-blue);
+    opacity: 1;
+    border: none;
 }
 .search-result-category a {
-    font-size: 12px;
-    line-height: 18px;
-    color: var(--basic-black);
-    opacity: 0.5;
-    border-bottom: 1px dashed var(--basic-blue);
+    padding-bottom: 2px;
+    color: var(--basic-black-opasity);
+    border-bottom: 1px dotted var(--basic-blue);
     flex-grow: 1;
 }
 .search-result-category a:hover {
@@ -1039,7 +1046,7 @@ a {
 
 /* Footer*/
 
-.footer-container{
+.footer-container {
     text-align: center;
     background-color: var(--basic-white-footer);
     width: 1200px;
@@ -1047,11 +1054,12 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;  
+    align-items: flex-start; 
+    box-shadow: inherit; 
 }
 .index-footer {
     margin-top: -122px;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 1;
 }
 .contacts {
@@ -1088,6 +1096,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-around;
+}
+.socials-list li {
+    margin-bottom: 5px;
+    justify-content: flex-start;
 }
 .socials-list a:hover {
     background-color: var(--special-blue-guidance);

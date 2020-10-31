@@ -103,7 +103,8 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding-top: 15px;
 }
 .site-navigation li {
@@ -116,10 +117,23 @@ a {
     align-items: center;
 }
 .site-navigation li:first-child {
-    margin-left: 5px;
+    margin-left: 0;
  }
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(7),
+.site-navigation li:nth-child(11) {
+    margin-left: 20%;
+}
+.site-navigation li:nth-child(2) {
+    margin-left: -11px;
+}
 .site-navigation li:nth-child(3) {
-    margin-left: 284px;
+    box-sizing: border-box;
+    padding-left: 60px;
+}
+.site-navigation li:nth-child(4) {
+    box-sizing: border-box;
+    padding-left: 37px;
 }
 .site-navigation .activ {
     color: var(--basic-brown);
@@ -200,10 +214,11 @@ a {
 }
 .container-first,
 .container-second {
-    height: 256px;
     box-sizing: border-box;
-    background-color: var(--basic-blue);
     color: var(--basic-white);
+    height: auto;
+    min-height: 256px;
+    background-color: initial;
 }
 .first {
    display: grid;
@@ -211,11 +226,12 @@ a {
 }
 .reason-first {
     display: block;
-    height: 256px;
+    height: auto;
+    min-height: 256px;
     box-sizing: border-box;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 25px 40px 0 40px;
+    padding: 25px 40px 20px 40px;
 }
 .sity-foto-1 {
     grid-column-start: 2;
@@ -231,6 +247,7 @@ a {
     color: var(--basic-gray-text);
     font-size: 14px;
     line-height: 21px;
+    padding-bottom: 9px;
 }
 .header-item {
     text-align: center;
@@ -287,7 +304,7 @@ a {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 256px 330px 256px 256px; 
+    grid-template-rows: max-content max-content max-content max-content; 
     grid-row-gap: 0;
 }
 .container-first {
@@ -295,6 +312,10 @@ a {
     grid-column-end: 4 ;
     grid-row-start: 1 ;
     grid-row-end: 3 ;
+}
+.reason-first, 
+.second {
+    background-color: var(--basic-blue);
 }
 .reasons-third {
     grid-column-start:1 ;
@@ -361,6 +382,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 3px;
 }
 .container-reservation h2 {
     font-size: 30px;
@@ -613,7 +635,7 @@ a {
     min-height: 217px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-right: 70px;
     padding-left: 69px;
 }
@@ -676,10 +698,15 @@ a {
 .hotel-type {
     padding-top: 10px;
     padding-right: 230px;
+    margin-left: 117px;
 }
 .hotel-type label{
     position: relative;
     display: block;
+}
+.hotel-type,
+.cost {
+    margin-left: auto;
 }
 .filter-item {
     margin: 0;
@@ -751,10 +778,11 @@ a {
 .price {
     border: 2px solid var(--basic-white);
     border-radius: 2px;
-    padding: 0 31px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 29px;
+    padding-right: 29px;
 }
 .price label {
     text-align: left;
@@ -858,8 +886,11 @@ a {
     opacity: 1;
     border: none;
 }
+.search-result-category .activ-category:active {
+    color: var(--basic-blue);
+}
 .search-result-category a {
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     color: var(--basic-black-opasity);
     border-bottom: 1px dotted var(--basic-blue);
     flex-grow: 1;
@@ -881,12 +912,10 @@ a {
 .arrow-1:hover path {
     fill: var(--basic-black);
 }
-.arrow-2:hover path {
-    fill: var(--basic-black);
-}
 .arrow-1:active path {
     fill: var(--basic-blue);
 }
+.arrow-2:hover path,
 .arrow-2:active path {
     fill: var(--basic-blue);
 }
@@ -927,6 +956,8 @@ a {
    justify-content: space-between;
    min-height: 150px;
    border-top: 1px solid var(--special-gray-line);
+   box-sizing: border-box;
+   padding-bottom: 24px;
 }
 .hotels-list-3{
     border-bottom: 1px solid var(--special-gray-line);
@@ -936,6 +967,7 @@ a {
 .hotel-img-3 {
    padding-top: 30px;
    padding-left: 73px;
+   flex-shrink: 0;
 }  
 .hotels-description-1,
 .hotels-description-2,
@@ -944,6 +976,7 @@ a {
     align-items: center;
     padding-top: 24px;
     padding-left: 29px;
+    padding-right: 20px;
 }
 .description-button {
     display: flex;

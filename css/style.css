@@ -218,7 +218,7 @@ a {
     color: var(--basic-white);
     height: auto;
     min-height: 256px;
-    background-color: initial;
+    background-color: var(--basic-blue);
 }
 .first {
    display: grid;
@@ -245,6 +245,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     color: var(--basic-gray-text);
+    background-color: var(--basic-white);
     font-size: 14px;
     line-height: 21px;
     padding-bottom: 9px;
@@ -631,6 +632,7 @@ a {
     background-image: url("../img/background.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--basic-gray-page);
     min-height: 217px;
     display: flex;
